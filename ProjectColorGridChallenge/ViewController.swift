@@ -31,7 +31,6 @@ class ViewController: UIViewController {
                 let key = "\(i)\(j)"
                 cells[key] = cell
             }
-            
         }
         
         view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
@@ -42,7 +41,7 @@ class ViewController: UIViewController {
         print(location)
         
         let width = view.frame.width / CGFloat(numViewPerRow)
-
+        
         let i = Int(location.x / width)
         let j = Int(location.y / width)
         let key = "\(i)\(j)"
